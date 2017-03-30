@@ -60,10 +60,12 @@ header{
 .stop-brisa{
     display: none;
     text-decoration: overline;
+    cursor: pointer;
 }
 
 .start-brisa{
     text-decoration: line-through;
+    cursor: pointer;
 }
 
 .brisa{
@@ -78,7 +80,6 @@ header{
     font-weight: bold;
     text-shadow: 2px 2px #2980b9;
     transition: 0.2s;
-    cursor: pointer;
 }
 
 .titulo-topo:hover{
@@ -87,7 +88,6 @@ header{
 
 .texto-topo{
     transition: 0.2s;
-    cursor: pointer;
 }
 
 .texto-topo:hover{
