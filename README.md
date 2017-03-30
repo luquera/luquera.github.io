@@ -1,4 +1,4 @@
 # site-portifolio
 Meu primeiro site portfólio 
-# abrir
+# iniciar
 basta abrir o arquivo index.html :)
