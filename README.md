@@ -1,4 +1,4 @@
 # site-portifolio
 meu primeiro site portfólio 
-# iniciar
-basta abrir o arquivo index.html :)
+# dominio e preview
+este site esta hospedado em https://lucashsc31.github.io
