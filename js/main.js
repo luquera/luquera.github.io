@@ -1,34 +1,29 @@
-//Função para topo
-function scrollTopo() {
-  var scrollPos;
-  var headerText = document.querySelector(".parallax-topo");
-  scrollPos = window.scrollY;
-  var height = window.innerHeight * 0.8;
+document.addEventListener("DOMContentLoaded", function(){
+    //Variables
+    var brisaToggle = document.querySelector(".stop-brisa, .start-brisa");
 
-  if (scrollPos <= height) {
-      headerText.style.transform =  "translateY(" + (-scrollPos/3) +"px" + ")";
-      headerText.style.opacity = 1 - (scrollPos/height);
-  }
-}
+    //Events
+    window.addEventListener("scroll", scroll);
+    brisaToggle.addEventListener("click", brisarToggle)
+    
 
-window.addEventListener("scroll", scrollTopo);
+    //Methods
+    function scroll(){
+        var bordaColorida = document.querySelector(".js-borda-colorida-main");
+        var cabecalho = document.querySelector(".js-cabecalho");  
 
-$(document).ready(function(){
-    var borda = $(".borda-colorida-main");
-    var header = $("header");
-    $(window).scroll(function () { 
-        if ($(this).scrollTop() > window.innerHeight) { 
-            borda.addClass("fixa-topo");
-            header.addClass("header-fixo");
+        if (window.scrollTop > window.innerHeight) { 
+            bordaColorida.classList.add("fixa-topo");
+            cabecalho.classList.add("header-fixo");
         } else { 
-            borda.removeClass("fixa-topo"); 
-            header.removeClass("header-fixo");
+            bordaColorida.classList.remove("fixa-topo"); 
+            cabecalho.classList.remove("header-fixo");
         } 
-    });   
+    }
 
-    $(".stop-brisa, .start-brisa").click(function(){
-        $(".topo").toggleClass("brisa");
-        $(".start-brisa").toggle();
-        $(".stop-brisa").toggle();
-    });
+    function brisarToggle(){
+    //     $(".topo").toggleClass("brisa");
+    //     $(".start-brisa").toggle();
+    //     $(".stop-brisa").toggle();
+    }
 });
