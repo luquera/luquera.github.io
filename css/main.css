@@ -90,6 +90,9 @@ header{
     animation-duration: 5s;
     animation-iteration-count: infinite;
     transition: 0.3s;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 .fixa-topo{
