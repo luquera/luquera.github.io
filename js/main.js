@@ -21,9 +21,4 @@ document.addEventListener("DOMContentLoaded", function(){
         } 
     }
 
-    function brisarToggle(){
-    //     $(".topo").toggleClass("brisa");
-    //     $(".start-brisa").toggle();
-    //     $(".stop-brisa").toggle();
-    }
 });
