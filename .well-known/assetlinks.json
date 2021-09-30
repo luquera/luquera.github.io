@@ -4,7 +4,7 @@
             "delegate_permission/common.handle_all_urls"
         ],
         "target": {
-            "namespace": "poc",
+            "namespace": "android_app",
             "package_name": "br.com.xpinc.finance.openbanking.pocredirect",
             "sha256_cert_fingerprints": [
                 "21:D3:B6:40:19:F0:69:FF:A3:44:8F:AB:26:58:28:7E:A3:AA:34:97:EB:A1:06:DC:AA:69:60:75:34:3A:AD:2A"
